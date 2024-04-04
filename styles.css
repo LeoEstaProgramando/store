@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  background-color: #FF3B3C;
+  color: white;
+  padding: 20px 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+header div input {
+  width: 250px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+header div div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+header div div img {
+  height: 30px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+section {
+  background-image: url(assets/hero_bg.png);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 75px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section h2 {
+  font-size: 35px;
+}
+section p {
+  display: block;
+  font-size: 85px;
+  font-weight: bolder;
+  margin-top: -25px;
+}
+
+main {
+  padding: 20px 75px;
+  background-color: #0f161b;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  gap: 25px;
+}
+main article {
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: white;
+  color: #0f161b;
+  border: 1px solid white;
+  text-align: center;
+}
+main article img {
+  width: 100%;
+}
+main article div {
+  text-align: left;
+  padding: 5px 15px;
+}
+main article div .titulo {
+  font-size: 25px;
+  font-weight: bolder;
+}
+main article div .color {
+  font-size: 15px;
+  color: gray;
+}
+main article div .precio {
+  font-size: 20px;
+  font-weight: bolder;
+}
+main article div .precio .descuento {
+  color: green;
+  float: right;
+  font-size: 17px;
+}
+main article div .comentario {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(120,0,200);
+  color: white;
+  padding: 20px 75px;
+  text-align: center;
+}
+footer .extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+footer .extras h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+footer .extras hr {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+footer .extras p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+footer hr {
+  margin: 20px 0;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 20px 75px;
+    background-color: #0f161b;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 25px;
+  }
+}
+
+@media (min-width:501px) and (max-width: 800px) {
+  main {
+    padding: 20px 75px;
+    background-color: #0f161b;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 25px;
+  }
+}
+
